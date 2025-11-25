@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>seletor de cores</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icons/favicon.ico') }}">
+</head>
+<body>
+    <header>
+        <h1>Seletor de cores</h1>
+        <nav>
+        </nav>
+    </header>
+    <main>
+        <div class="result-container" id="result-container">
+           
+        
+        </div>
+        <h2>Bem-vindo ao seu seletor de cores</h2>
+        <p>Explore ferramentas para selecionar cores em hexadecimal</p>
+
+        <div class="calculator">
+            <h2>Calculadora de cor  </h2>
+            <form id="calc-form" action="">
+                <div class="colores">
+                    <input type="text" id="a" class="input1" placeholder="cor em hexadecimal" required step="any">
+          
+                <button type="submit" class="botao1">enviar</button>
+                </div>
+                
+            </form>
+        </div>
+    </main>
+    <p id="resultado"></p>
+    <footer>
+        &copy; projeto prova Maykol
+    </footer>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+</html>

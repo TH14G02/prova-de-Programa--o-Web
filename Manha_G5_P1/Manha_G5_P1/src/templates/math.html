@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado da cor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/math.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icons/favicon.ico') }}">
+</head>
+<body>
+    <header>
+        <h1>calculo de cor hexadecimal</h1>
+        <nav>
+        </nav>
+    </header>
+    <main>
+        <div class="result-container" id="result-container">
+                <h3>{{ name }}</h3>
+                <h3>{{ name1 }}</h3>
+                <h3>{{ namee }}</h3>
+            <div id="coloridor" >
+             
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <a href="{{ url_for('index') }}" class="back-button">Voltar</a>
+        </div>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/math.js') }}"></script>
+</body>
+</html>
