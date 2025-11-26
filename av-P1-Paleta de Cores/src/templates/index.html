@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Paleta de Cores</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Paleta de Cores</h1>
+        <p>Insira uma cor em formato hexadecimal (ex: #FF5733) para começar.</p>
+        <div class="input-group">
+            <input type="text" id="corInput" placeholder="#FF5733" value="#FF5733">
+            <button id="gerarBtn">Gerar Paleta</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

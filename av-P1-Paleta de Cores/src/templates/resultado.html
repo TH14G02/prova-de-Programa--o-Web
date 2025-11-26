@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Paleta de Cores</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Sua Paleta de Cores</h1>
+        <div class="palette-container">
+            <!-- Cor Clara -->
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: {{ cor_clara }};"></div>
+                <p class="color-code">{{ cor_clara }}</p>
+            </div>
+            <!-- Cor Original -->
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: {{ cor_original }};"></div>
+                <p class="color-code">{{ cor_original }}</p>
+            </div>
+            <!-- Cor Escura -->
+            <div class="color-card">
+                <div class="color-swatch" style="background-color: {{ cor_escura }};"></div>
+                <p class="color-code">{{ cor_escura }}</p>
+            </div>
+        </div>
+        <a href="{{ url_for('index') }}" class="back-link">Gerar outra paleta</a>
+    </div>
+</body>
+</html>
